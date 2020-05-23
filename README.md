@@ -1,3 +1,6 @@
+# Braggy
+Available in https://gabipilegi.github.io/braggy/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
