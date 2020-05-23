@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/braggy/static/css/main.5f361e03.chunk.css",
-    "main.js": "/braggy/static/js/main.d1e05a93.chunk.js",
-    "main.js.map": "/braggy/static/js/main.d1e05a93.chunk.js.map",
+    "main.js": "/braggy/static/js/main.e69674d8.chunk.js",
+    "main.js.map": "/braggy/static/js/main.e69674d8.chunk.js.map",
     "runtime-main.js": "/braggy/static/js/runtime-main.aea76b6f.js",
     "runtime-main.js.map": "/braggy/static/js/runtime-main.aea76b6f.js.map",
     "static/js/2.9bc2db88.chunk.js": "/braggy/static/js/2.9bc2db88.chunk.js",
     "static/js/2.9bc2db88.chunk.js.map": "/braggy/static/js/2.9bc2db88.chunk.js.map",
     "index.html": "/braggy/index.html",
-    "precache-manifest.995d3cf86c217f07f399c8096037bccf.js": "/braggy/precache-manifest.995d3cf86c217f07f399c8096037bccf.js",
+    "precache-manifest.4acd3c1b30152f19f3f7adfd7fad566a.js": "/braggy/precache-manifest.4acd3c1b30152f19f3f7adfd7fad566a.js",
     "service-worker.js": "/braggy/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/braggy/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.9bc2db88.chunk.js.LICENSE.txt": "/braggy/static/js/2.9bc2db88.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.aea76b6f.js",
     "static/js/2.9bc2db88.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.d1e05a93.chunk.js"
+    "static/js/main.e69674d8.chunk.js"
   ]
 }
