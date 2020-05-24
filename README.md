@@ -8,6 +8,7 @@ Todo
 
 - [ ] Create interface for the customer to input a brag
 - [ ] List in memory brags
+- [ ] Configure linter
 - [ ] Separate brags per user
 - [ ] Send brags to some backend API
 - [ ] Get brags from some backend API
