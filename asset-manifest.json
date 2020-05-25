@@ -1,23 +1,22 @@
 {
   "files": {
     "main.css": "/braggy/static/css/main.5f361e03.chunk.css",
-    "main.js": "/braggy/static/js/main.e69674d8.chunk.js",
-    "main.js.map": "/braggy/static/js/main.e69674d8.chunk.js.map",
+    "main.js": "/braggy/static/js/main.0fc111b9.chunk.js",
+    "main.js.map": "/braggy/static/js/main.0fc111b9.chunk.js.map",
     "runtime-main.js": "/braggy/static/js/runtime-main.aea76b6f.js",
     "runtime-main.js.map": "/braggy/static/js/runtime-main.aea76b6f.js.map",
-    "static/js/2.9bc2db88.chunk.js": "/braggy/static/js/2.9bc2db88.chunk.js",
-    "static/js/2.9bc2db88.chunk.js.map": "/braggy/static/js/2.9bc2db88.chunk.js.map",
+    "static/js/2.7876793a.chunk.js": "/braggy/static/js/2.7876793a.chunk.js",
+    "static/js/2.7876793a.chunk.js.map": "/braggy/static/js/2.7876793a.chunk.js.map",
     "index.html": "/braggy/index.html",
-    "precache-manifest.4acd3c1b30152f19f3f7adfd7fad566a.js": "/braggy/precache-manifest.4acd3c1b30152f19f3f7adfd7fad566a.js",
+    "precache-manifest.9803ab5ae835129ec5bc04d26e150d14.js": "/braggy/precache-manifest.9803ab5ae835129ec5bc04d26e150d14.js",
     "service-worker.js": "/braggy/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/braggy/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.9bc2db88.chunk.js.LICENSE.txt": "/braggy/static/js/2.9bc2db88.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/braggy/static/media/logo.5d5d9eef.svg"
+    "static/js/2.7876793a.chunk.js.LICENSE.txt": "/braggy/static/js/2.7876793a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.aea76b6f.js",
-    "static/js/2.9bc2db88.chunk.js",
+    "static/js/2.7876793a.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.e69674d8.chunk.js"
+    "static/js/main.0fc111b9.chunk.js"
   ]
 }
