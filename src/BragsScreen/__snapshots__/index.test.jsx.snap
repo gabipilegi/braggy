@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BragsScreen Should match snapshot 1`] = `
+<div>
+  <div>
+    <form
+      data-testid="brag-form"
+    >
+      <label
+        for="brag"
+      >
+        Brag:
+      </label>
+      <input
+        id="brag"
+        placeholder="Enter Brag Here"
+        type="text"
+        value=""
+      />
+      <button
+        class="button"
+      >
+        Submit
+      </button>
+    </form>
+    <ul />
+  </div>
+</div>
+`;
