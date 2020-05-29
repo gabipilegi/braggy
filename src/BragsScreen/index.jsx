@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Brags from './Brags'
 import CreateBrag from './CreateBrag'
+import { Container } from '@material-ui/core'
 
 const BragsScreen = () => {
   const [{ brag, brags }, setState] = useState({ brag: '', brags: [] })
@@ -23,10 +24,10 @@ const BragsScreen = () => {
   }
 
   return (
-    <div>
+    <Container>
       <CreateBrag brag={brag} onSubmit={onSubmit} onChange={onChange} />
       <Brags brags={brags} />
-    </div>
+    </Container>
   )
 }
 

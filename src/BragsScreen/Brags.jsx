@@ -1,11 +1,18 @@
 import React from 'react'
+import { List, ListItem, ListItemIcon, Folder } from '@material-ui/core'
+import { ChatBubbleRounded } from '@material-ui/icons'
 
 const Brags = ({ brags }) => (
-  <ul>
+  <List>
     {brags.map((brag, index) => (
-      <li key={index}>{brag}</li>
+      <ListItem key={index}>
+        <ListItemIcon>
+          <ChatBubbleRounded />
+        </ListItemIcon>
+        {brag}
+      </ListItem>
     ))}
-  </ul>
+  </List>
 )
 
 export default Brags

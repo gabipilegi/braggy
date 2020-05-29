@@ -1,18 +1,29 @@
 import React from 'react'
+import { TextField, Button, Container } from '@material-ui/core'
+import { SendRounded } from '@material-ui/icons'
 
 const CreateBrag = ({ brag, onSubmit, onChange }) => {
   return (
-    <form onSubmit={onSubmit} data-testid="brag-form">
-      <label htmlFor="brag">Brag:</label>
-      <input
-        id="brag"
-        type="text"
-        placeholder="Enter Brag Here"
-        value={brag}
-        onChange={onChange}
-      />
-      <button className="button">Submit</button>
-    </form>
+    <Container>
+      <form onSubmit={onSubmit} data-testid="brag-form">
+        <div>
+          <TextField
+            id="brag"
+            label="Your brag here"
+            multiline
+            rows={4}
+            value={brag}
+            onChange={onChange}
+            variant="outlined"
+          />
+        </div>
+        <div>
+          <Button type="submit" endIcon={<SendRounded />}>
+            Brag
+          </Button>
+        </div>
+      </form>
+    </Container>
   )
 }
 
