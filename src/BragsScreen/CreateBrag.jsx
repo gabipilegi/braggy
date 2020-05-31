@@ -10,6 +10,7 @@ const CreateBrag = ({ brag, onSubmit, onChange }) => {
           <TextField
             id="brag"
             fullWidth
+            required
             label="Your brag here"
             multiline
             rows={4}
