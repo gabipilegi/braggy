@@ -9,6 +9,7 @@ const CreateBrag = ({ brag, onSubmit, onChange }) => {
         <div>
           <TextField
             id="brag"
+            fullWidth
             label="Your brag here"
             multiline
             rows={4}
@@ -18,7 +19,7 @@ const CreateBrag = ({ brag, onSubmit, onChange }) => {
           />
         </div>
         <div>
-          <Button type="submit" endIcon={<SendRounded />}>
+          <Button type="submit" fullWidth endIcon={<SendRounded />}>
             Brag
           </Button>
         </div>

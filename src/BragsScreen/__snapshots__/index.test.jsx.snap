@@ -3,85 +3,102 @@
 exports[`BragsScreen Should match snapshot 1`] = `
 <div>
   <div
-    class="MuiContainer-root MuiContainer-maxWidthLg"
+    class="MuiGrid-root MuiGrid-container"
   >
     <div
-      class="MuiContainer-root MuiContainer-maxWidthLg"
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
     >
-      <form
-        data-testid="brag-form"
+      <p
+        class="makeStyles-title-1"
       >
-        <div>
-          <div
-            class="MuiFormControl-root MuiTextField-root"
-          >
-            <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
-              data-shrink="false"
-              for="brag"
-              id="brag-label"
-            >
-              Your brag here
-            </label>
+        What are we gonna brag about today?
+      </p>
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg"
+      >
+        <form
+          data-testid="brag-form"
+        >
+          <div>
             <div
-              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline"
+              class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
             >
-              <textarea
-                aria-invalid="false"
-                class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline"
-                id="brag"
-                rows="4"
-              />
-              <fieldset
-                aria-hidden="true"
-                class="PrivateNotchedOutline-root-1 MuiOutlinedInput-notchedOutline"
+              <label
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                data-shrink="false"
+                for="brag"
+                id="brag-label"
               >
-                <legend
-                  class="PrivateNotchedOutline-legendLabelled-3"
+                Your brag here
+              </label>
+              <div
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline"
+              >
+                <textarea
+                  aria-invalid="false"
+                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline"
+                  id="brag"
+                  rows="4"
+                />
+                <fieldset
+                  aria-hidden="true"
+                  class="PrivateNotchedOutline-root-2 MuiOutlinedInput-notchedOutline"
                 >
-                  <span>
-                    Your brag here
-                  </span>
-                </legend>
-              </fieldset>
+                  <legend
+                    class="PrivateNotchedOutline-legendLabelled-4"
+                  >
+                    <span>
+                      Your brag here
+                    </span>
+                  </legend>
+                </fieldset>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text"
-            tabindex="0"
-            type="submit"
-          >
-            <span
-              class="MuiButton-label"
+          <div>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-fullWidth"
+              tabindex="0"
+              type="submit"
             >
-              Brag
               <span
-                class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                class="MuiButton-label"
               >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
+                Brag
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
-                  <path
-                    d="M3.4 20.4l17.45-7.48c.81-.35.81-1.49 0-1.84L3.4 3.6c-.66-.29-1.39.2-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z"
-                  />
-                </svg>
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3.4 20.4l17.45-7.48c.81-.35.81-1.49 0-1.84L3.4 3.6c-.66-.29-1.39.2-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z"
+                    />
+                  </svg>
+                </span>
               </span>
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
-        </div>
-      </form>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-    <ul
-      class="MuiList-root MuiList-padding"
-    />
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg"
+      >
+        <ul
+          class="MuiList-root MuiList-padding"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
