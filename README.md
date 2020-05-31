@@ -6,8 +6,8 @@ Available in https://gabipilegi.github.io/braggy/
 
 Todo
 
-- [ ] Create interface for the customer to input a brag
-- [ ] List in memory brags
+- [x] Create interface for the customer to input a brag
+- [x] List in memory brags
 - [ ] Configure linter
 - [ ] Separate brags per user
 - [ ] Send brags to some backend API
