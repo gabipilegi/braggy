@@ -24,12 +24,19 @@ exports[`BragsScreen Should match snapshot 1`] = `
               class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
             >
               <label
-                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
                 data-shrink="false"
                 for="brag"
                 id="brag-label"
               >
                 Your brag here
+                <span
+                  aria-hidden="true"
+                  class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
+                >
+                   
+                  *
+                </span>
               </label>
               <div
                 class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline"
@@ -38,6 +45,7 @@ exports[`BragsScreen Should match snapshot 1`] = `
                   aria-invalid="false"
                   class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline"
                   id="brag"
+                  required=""
                   rows="4"
                 />
                 <fieldset
@@ -49,6 +57,7 @@ exports[`BragsScreen Should match snapshot 1`] = `
                   >
                     <span>
                       Your brag here
+                       *
                     </span>
                   </legend>
                 </fieldset>
