@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const Brags = ({ brags }) => {
   const useStyles = makeStyles((theme) => ({
-    brags: {
+    brag: {
       wordBreak: 'break-all',
     },
   }))
@@ -13,15 +13,17 @@ const Brags = ({ brags }) => {
   const classes = useStyles()
 
   return (
-    <Container class={classes.brags}>
+    <Container>
       <List>
         {brags.map((brag, index) => (
-          <ListItem key={index}>
-            <ListItemIcon>
-              <ChatBubbleRounded />
-            </ListItemIcon>
-            {brag}
-          </ListItem>
+          <div class={classes.brag}>
+            <ListItem key={index}>
+              <ListItemIcon>
+                <ChatBubbleRounded />
+              </ListItemIcon>
+              {brag}
+            </ListItem>
+          </div>
         ))}
       </List>
     </Container>
