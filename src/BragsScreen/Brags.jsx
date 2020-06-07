@@ -1,33 +1,16 @@
 import React from 'react'
-import { List, ListItem, ListItemIcon, Container } from '@material-ui/core'
-import { ChatBubbleRounded } from '@material-ui/icons'
-import { makeStyles } from '@material-ui/core/styles'
+import { List, ListItem, Container, ListItemText } from '@material-ui/core'
 
-const Brags = ({ brags }) => {
-  const useStyles = makeStyles((theme) => ({
-    brag: {
-      wordBreak: 'break-all',
-    },
-  }))
-
-  const classes = useStyles()
-
-  return (
-    <Container>
-      <List>
-        {brags.map((brag, index) => (
-          <div class={classes.brag}>
-            <ListItem key={index}>
-              <ListItemIcon>
-                <ChatBubbleRounded />
-              </ListItemIcon>
-              {brag}
-            </ListItem>
-          </div>
-        ))}
-      </List>
-    </Container>
-  )
-}
+const Brags = ({ brags }) => (
+  <Container>
+    <List>
+      {brags.map((brag, index) => (
+        <ListItem key={index} style={{ wordBreak: 'break-all' }}>
+          <ListItemText primary={brag.date} secondary={brag.description} />
+        </ListItem>
+      ))}
+    </List>
+  </Container>
+)
 
 export default Brags
