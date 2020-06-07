@@ -14,7 +14,7 @@ const CreateBrag = ({ brag, onSubmit, onChange }) => {
             label="Your brag here"
             multiline
             rows={4}
-            value={brag}
+            value={brag.description}
             onChange={onChange}
             variant="outlined"
           />

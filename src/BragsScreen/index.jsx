@@ -3,9 +3,13 @@ import Brags from './Brags'
 import CreateBrag from './CreateBrag'
 import { Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import { today } from '../date'
 
 const BragsScreen = () => {
-  const [{ brag, brags }, setState] = useState({ brag: '', brags: [] })
+  const [{ brag, brags }, setState] = useState({
+    brag: { description: '' },
+    brags: [],
+  })
 
   const useStyles = makeStyles((theme) => ({
     title: {
@@ -16,9 +20,10 @@ const BragsScreen = () => {
 
   const onSubmit = (event) => {
     event.preventDefault()
+    let newBrag = { description: brag.description, date: today() }
     setState({
-      brag: '',
-      brags: [...brags, brag],
+      brag: { description: '' },
+      brags: [...brags, newBrag],
     })
   }
 
@@ -26,7 +31,7 @@ const BragsScreen = () => {
     let value = event.target.value
 
     setState((previousState) => ({
-      brag: value,
+      brag: { description: value },
       brags: previousState.brags,
     }))
   }
@@ -34,7 +39,7 @@ const BragsScreen = () => {
   return (
     <Grid container>
       <Grid item xs={12}>
-        <p class={classes.title}>What are we gonna brag about today?</p>
+        <p className={classes.title}>What are we gonna brag about today?</p>
         <CreateBrag brag={brag} onSubmit={onSubmit} onChange={onChange} />
       </Grid>
       <Grid item xs={12}>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { List, ListItem, Container, ListItemText } from '@material-ui/core'
-import { ChatBubbleRounded } from '@material-ui/icons'
-import { makeStyles } from '@material-ui/core/styles'
+import { formatedDate } from '../date'
 
 const Brags = ({ brags }) => {
   return (
@@ -10,8 +9,8 @@ const Brags = ({ brags }) => {
         {brags.map((brag, index) => (
           <ListItem key={index}>
             <ListItemText
-              primary="20 Jun 2020"
-              secondary={brag}
+              primary={formatedDate(brag.date)}
+              secondary={brag.description}
               style={{ wordBreak: 'break-all' }}
             />
           </ListItem>
