@@ -3,7 +3,7 @@ import Brags from './Brags'
 import CreateBrag from './CreateBrag'
 import { Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import { today } from '../date'
+import moment from 'moment'
 
 const BragsScreen = () => {
   const [{ brag, brags }, setState] = useState({
@@ -16,11 +16,15 @@ const BragsScreen = () => {
       color: theme.palette.text.secondary,
     },
   }))
+
   const classes = useStyles()
 
   const onSubmit = (event) => {
     event.preventDefault()
-    let newBrag = { description: brag.description, date: today() }
+    let newBrag = {
+      description: brag.description,
+      date: moment().format('L'),
+    }
     setState({
       brag: { description: '' },
       brags: [...brags, newBrag],
