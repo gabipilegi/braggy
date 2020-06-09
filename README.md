@@ -9,11 +9,10 @@ Todo
 - [x] Create interface for the customer to input a brag
 - [x] List in memory brags
 - [ ] Configure linter
-- [ ] Separate brags per user
+- [ ] Autentication
+- [ ] Brags timeline
 - [ ] Send brags to some backend API
 - [ ] Get brags from some backend API
-- [ ] Autentication
-
 
 ## Available Scripts
 
