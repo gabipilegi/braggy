@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Brags from './Brags'
 import CreateBrag from './CreateBrag'
 import { Grid } from '@material-ui/core'
@@ -11,6 +11,14 @@ const BragsScreen = () => {
     brags: [],
   })
 
+  useEffect(() => {
+    const existingBrags = JSON.parse(localStorage.getItem('@braggy/brags'))
+    setState({
+      brag: { description: '' },
+      brags: existingBrags ? existingBrags : [],
+    })
+  }, [])
+
   const useStyles = makeStyles((theme) => ({
     title: {
       color: theme.palette.text.secondary,
@@ -21,14 +29,20 @@ const BragsScreen = () => {
 
   const onSubmit = (event) => {
     event.preventDefault()
-    let newBrag = {
+
+    const newBrag = {
       description: brag.description,
       date: moment().format('L'),
     }
+
+    const newBrags = [...brags, newBrag]
+
     setState({
       brag: { description: '' },
-      brags: [...brags, newBrag],
+      brags: newBrags,
     })
+
+    localStorage.setItem('@braggy/brags', JSON.stringify(newBrags))
   }
 
   const onChange = (event) => {
