@@ -9,7 +9,7 @@ exports[`BragsScreen Should match snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
     >
       <p
-        class="makeStyles-title-1"
+        class="makeStyles-title-6"
       >
         What are we gonna brag about today?
       </p>
